@@ -1,0 +1,22 @@
+{
+  "Records": [
+    {
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:us-west-2:662755395251:ocb-dev-event:cbefaa31-bcbe-4fed-8fc9-901e813f096d",
+      "EventSource": "aws:sns",
+      "Sns": {
+        "Signature": "kqZfDHPhAorXZ1/exHhxVJ5XXXgFqnVIK+8Z5lK8E5jgvR9PK0szM312l0P3L/mD/QLXAueF1zTGbXQHnDtA0DdFZGoWEvhTDLi04GJGm7eMk1ny69+CODCOT838TPw3lECp9MO2ooL0pCoYweeIdHVLek2hOaAN6AMn1HYz4T3NyX3ODrJgXuteyhTx98OKwBN0WHqQgkfJn8oKGtIfYPk5q3Sh5/eZmOUkCc0lwBCIUW+hqRuBlRGhzbT4xE/M4d0DOr3ajk4qUfgrpu86cGPeOb6EHt969hpAJIqWVbxhJcaPjG5thbkzKhAaVI5DimQ/4ZIglhK6QhNu7JnNXg==",
+        "MessageId": "392a5bff-2c67-57e3-8575-030b778c8fcc",
+        "Type": "Notification",
+        "TopicArn": "arn:aws:sns:us-west-2:662755395251:ocb-dev-event",
+        "MessageAttributes": {},
+        "SignatureVersion": "1",
+        "Timestamp": "2021-04-17T03:44:43.21Z",
+        "SigningCertUrl": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-010a507c1833636cd94bdb98bd93083a.pem",
+        "Message": "{\"deviceEvent\":{\"buttonClicked\":{\"additionalInfo\":{\"version\":\"1.8.0\"},\"clickType\":\"SINGLE\",\"reportedTime\":\"2021-04-17T03:44:40.819Z\"},\"deviceHealthMonitor\":null},\"deviceInfo\":{\"attributes\":{\"deviceTemplateName\":\"clickRequest\",\"placementName\":\"demo-device-placement\",\"projectName\":\"topicana\",\"projectRegion\":\"us-west-2\"},\"deviceId\":\"P5SJVQ2007J8H74B\",\"remainingLife\":85.0,\"type\":\"button\"},\"devicePayload\":{\"certificateId\":\"46d9631462ae5e47b847e23b94251188ad76cd6c318b6eb210e963f106a45088\",\"clickType\":\"SINGLE\",\"remainingLife\":85,\"reportedTime\":1618631080819,\"serialNumber\":\"P5SJVQ2007J8H74B\",\"topic\":\"/Devices/Button/P5SJVQ\",\"version\":\"1.8.0\"},\"placementInfo\":{\"attributes\":{\"location\":\"homeOffice\"},\"devices\":{\"clickRequest\":\"P5SJVQ2007J8H74B\"},\"placementName\":\"demo-device-placement\",\"projectName\":\"topicana\"}}\n",
+        "UnsubscribeUrl": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe\u0026SubscriptionArn=arn:aws:sns:us-west-2:662755395251:ocb-dev-event:cbefaa31-bcbe-4fed-8fc9-901e813f096d",
+        "Subject": ""
+      }
+    }
+  ]
+}

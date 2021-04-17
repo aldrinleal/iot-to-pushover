@@ -1,0 +1,48 @@
+service: i2p
+
+configValidationMode: error
+frameworkVersion: '>=2.33.0 <3.0.0'
+
+provider:
+  name: aws
+  runtime: go1.x
+  region: us-west-2
+  stage: ${opt:stage,'dev'}
+  environment:
+    # you can define service wide environment variables here
+    GIN_MODE: "release"
+    PUSHOVER_TOKEN: ${env:PUSHOVER_TOKEN}
+    PUSHOVER_USER_KEY: ${env:PUSHOVER_USER_KEY}
+  memorySize: 256
+  timeout: 15
+  lambdaHashingVersion: 20201221
+  apiGateway:
+    shouldStartNameWithService: true
+  # iamRoleStatements:
+  #   - Effect: "Allow"
+  #     Action:
+  #       - "sns:*"
+  #       - "s3:*"
+  #     Resource: "*"
+
+package:
+  patterns:
+    - '!./**'
+    - './bin/**'
+
+functions:
+  service:
+    handler: bin/service
+
+resources:
+  Description: "SNS Handler to Pushover (messages from iot 1-click)"
+
+plugins:
+  - serverless-stack-output
+  - serverless-dotenv-plugin
+
+custom:
+  dotenv:
+    path: .env
+  output:
+    file: stack.json

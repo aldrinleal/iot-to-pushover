@@ -1,0 +1,15 @@
+{
+  "name": "sha",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "^2.33.1",
+    "serverless-dotenv-plugin": "^3.9.0"
+  },
+  "scripts": {
+    "sls": "sls"
+  },
+  "devDependencies": {
+    "serverless-stack-output": "^0.2.3"
+  }
+}
