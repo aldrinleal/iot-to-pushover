@@ -2,7 +2,7 @@
 
 A bridge from SNS Events (containing 1click data) to Pushover
 
-![image](https://user-images.githubusercontent.com/253109/115102103-8b475b00-9f0e-11eb-9004-fb596e63aafc.png)
+![image](https://user-images.githubusercontent.com/253109/115102121-9bf7d100-9f0e-11eb-902b-57e1d7170c9f.png)
 
 ## Setup Instructions
 
