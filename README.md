@@ -1,6 +1,6 @@
 # iot-to-pushover
 
-A bridge from SNS Events (containing 1click data) to Pushover
+A bridge from SNS Events (containing 1click data) to [Pushover](https://pushover.net/)
 
 ![image](https://user-images.githubusercontent.com/253109/115102121-9bf7d100-9f0e-11eb-902b-57e1d7170c9f.png)
 
